@@ -1,0 +1,51 @@
+.GridBox{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    
+    max-height: 100%;
+    overflow-y: hidden;
+   
+    Margin: 0;
+   
+   }
+   .BoxContainer{
+    display: grid;
+    grid-template-areas: 
+     "big  big long "
+     "big  big  long"  
+     "small small2 long"
+     "small3 small4 small5"
+    ;
+    height:100vh; 
+    width: 100vw;
+   }
+   .SmallBox{
+       border:#000000 solid;
+       border-width: .1em;
+   
+       transition: scale 0.3s;
+   }
+   .SmallBox:hover{
+       scale: 0.85;
+   }
+   .SmallBox:active{
+       scale: 0.7;
+       border-color: #ffffff;
+   }
+   #SmallBox1{
+       grid-area: big;
+       background-color: #3777FF;
+   }
+   #SmallBox2{
+       grid-area: long;
+       background-color: #FFE156;
+   }
+   #SmallBox3, #SmallBox4{
+       background-color: #FFB5C2;
+   }
+   #SmallBox5 , #SmallBox6{
+       background-color: #FFBE86;
+   }
+   #SmallBox7{
+       background-color: #FFE9CE;
+   }
