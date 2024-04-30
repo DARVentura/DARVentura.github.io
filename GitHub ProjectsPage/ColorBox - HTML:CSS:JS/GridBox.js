@@ -21,4 +21,5 @@ function RandomColorSmallBoxCell() {
     const NewRGBColor = `rgb(${r}, ${g}, ${b})`; 
   
     this.style.backgroundColor = NewRGBColor;
+    this.title = NewRGBColor
   }
